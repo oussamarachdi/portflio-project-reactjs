@@ -1,12 +1,34 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Particles from 'react-particles-js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
+    <>
+    <Particles
+        params={{
+          particles: {
+            number:40,
+            density:{
+              enable:true,
+              value_area:900,
+            }
+          },
+          shape: {
+            type: "circle",
+            stroke : {
+              width :6,
+              color: "#f9ab00"
+            }
+          }
+        }} 
+    />
       <Navbar />
-    </div>
+      <Header />
+    </>
   );
 }
 
