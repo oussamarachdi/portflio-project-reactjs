@@ -47,7 +47,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
 }
 
 /* *****************NavBar********************** */
@@ -109,11 +109,20 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 1;
 }
 
 .main-info h1 {
   color: var(--primary-orange);
   text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
 }
 
 /* ------------Typed-text--------------- */
@@ -132,10 +141,46 @@ nav {
   margin: 2rem;
   text-decoration: none;
 }
-/* ------------Parti--------------- */
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--priamary-hover-red);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
+}
+/* ------------Particles js--------------- */
 .tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
   width: 100vw;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
+}
+
+/* ******************About Me*********************** */
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img {
+  width: 16rem;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  padding: 0.3rem;
+  border: 1px solif --primary-orange;
+}
+.about-heading {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+@media (max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
 }
