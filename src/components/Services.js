@@ -9,7 +9,7 @@ const Services = () => {
             <h1 className="py-5">My Services</h1>
                 <div className="container">
                         <div className="row">
-                            <div className="col-md-3 col-sm-6">
+                            <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="box">
                                     <div className="circle">
                                         <FontAwesomeIcon className="icon"  icon={faDesktop} size="2x"/>
@@ -18,7 +18,7 @@ const Services = () => {
                                     <p>I approach each project individually and always focus on the results.</p>
                                 </div>
                             </div>
-                            <div className="col-md-3 col-sm-6">
+                            <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="box">
                                     <div className="circle">
                                         <FontAwesomeIcon className="icon" icon={faFileCode} size="2x"/>
@@ -27,7 +27,7 @@ const Services = () => {
                                     <p>Your Website will be build with proven technologies.</p>
                                 </div>
                             </div>
-                            <div className="col-md-3 col-sm-6">
+                            <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="box">
                                     <div className="circle">
                                         <FontAwesomeIcon className="icon"  icon={faFacebookF} size="2x"/>
@@ -36,7 +36,7 @@ const Services = () => {
                                     <p>Your potential clients well see your services or product on Facebook</p>
                                 </div>
                             </div>
-                            <div className="col-md-3 col-sm-6">
+                            <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="box">
                                     <div className="circle">
                                         <FontAwesomeIcon className="icon"  icon={faGoogle} size="2x"/>

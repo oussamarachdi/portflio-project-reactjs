@@ -13,7 +13,7 @@ const NavbarComponent = () => {
                 <Nav.Link className="nav-link" href="/">Home</Nav.Link>
                 <Nav.Link className="nav-link" href="/">About us</Nav.Link>
                 <Nav.Link className="nav-link" href="/">Services</Nav.Link>
-                <Nav.Link className="nav-link" href="/">How Work</Nav.Link>
+                <Nav.Link className="nav-link" href="/">expercience</Nav.Link>
                 <Nav.Link className="nav-link" href="/">Portfolio</Nav.Link>
                 <Nav.Link className="nav-link" href="/">Contacts</Nav.Link>
             </Nav>

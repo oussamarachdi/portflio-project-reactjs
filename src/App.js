@@ -6,6 +6,7 @@ import Particles from 'react-particles-js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AboutMe from './components/AboutMe';
 import Services from './components/Services';
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <Header />
       <AboutMe />
       <Services />
+      <Experience />
     </>
   );
 }
