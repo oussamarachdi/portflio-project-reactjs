@@ -47,6 +47,7 @@
   --primary-red: #ef4035;
   --priamary-hover-red: #f33501;
   --primary-light-grey: #f4f4f4;
+  --primary-black: #000000;
 }
 
 body {
@@ -175,7 +176,7 @@ nav {
   border-radius: 70% 50% 70% 50%;
   margin-bottom: 5px;
   padding: 0.3rem;
-  border: 1px solif --primary-orange;
+  border: 1px solid var(--primary-orange);
 }
 .about-heading {
   color: var(--primary-orange);
@@ -220,6 +221,7 @@ nav {
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background: var(--primary-white);
+  transition: 0.3s ease-in-out;
 }
 .services .box:hover {
   background: var(--primary-orange);
@@ -319,5 +321,105 @@ nav {
     float: none;
     width: 100%;
     direction: ltr;
+  }
+}
+
+/* ****************** Portfolio *********************** */
+
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  color: var(--primary-orange);
+}
+
+.portfolio-image {
+  width: 17rem;
+  border: 1px solid var(--primary-orange);
+  border-radius: 3px;
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+  width: auto !important;
+}
+
+/* -------------------------Overflow Box---------------------------- */
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 17rem;
+  height: 9rem;
+  border: 1px solid var(--primary-red);
+  top: 0;
+  cursor: pointer;
+}
+.portfolio-image-box:hover .overflow {
+  opacity: 0.6;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -9rem;
+  margin-top: 3.6rem;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* -------------------------PopUp Box---------------------------- */
+.portfolio-image-popupbox {
+  width: 45rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-text {
+  cursor: pointer;
+  color: var(--primary-orange);
+}
+.hyper-text:hover {
+  color: var(--primary-red);
+}
+
+/* -------------------------media---------------------------- */
+@media (max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media (max-height: 570px) {
+  .hyper-text {
+    font-size: 13px;
+  }
+  .popupbox-content p {
+    font-size: 12px;
+  }
+  .popupbox-wrapper {
+    height: 100%;
+  }
+  .portfolio-image-popupbox {
+    width: 50%;
+  }
+}
+@media (max-height: 280px) {
+  .popupbox-wrapper {
+    width: 90%;
+  }
+  .portfolio-image-box {
+    width: 30%;
   }
 }
